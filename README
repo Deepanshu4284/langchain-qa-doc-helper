@@ -1,0 +1,24 @@
+# LangChain Document Helper
+
+A simple AI-powered **Document QA tool** that allows you to ask questions about text or PDF documents using **LangChain**, **Hugging Face Transformers**, and **FAISS** for semantic search.
+
+---
+
+## Features
+
+- Load `.txt` and `.pdf` documents
+- Split documents into chunks for better retrieval
+- Generate embeddings using **Sentence-Transformers**
+- Semantic search with **FAISS**
+- Question answering with **Flan-T5** model via Hugging Face Pipeline
+- Interactive console to ask queries
+
+---
+
+## Requirements
+
+- Python 3.10+
+- pip packages:
+
+```bash
+pip install langchain langchain-huggingface langchain-community transformers faiss-cpu python-dotenv
