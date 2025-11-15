@@ -27,7 +27,7 @@ embedding_model = HuggingFaceEmbeddings(
 )
 vectorstore = FAISS.from_documents(texts, embedding_model)
 
-model_name = "google/flan-t5-small"
+model_name = "google/flan-t5-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name, token=HUGGINGFACEHUB_API_TOKEN)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name, token=HUGGINGFACEHUB_API_TOKEN)
 
